@@ -1,0 +1,23 @@
+name: NumberGenPrototype
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  NumberGenPrototype:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources/NumberGenPrototype
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.numbergenprototype
+        PRODUCT_NAME: NumberGenPrototype
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_KEY_CFBundleDisplayName: NumberGen
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGNING_ALLOWED: NO
